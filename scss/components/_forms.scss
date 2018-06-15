@@ -1,0 +1,35 @@
+//-------------------------------------------
+//  FORMS
+//-------------------------------------------
+
+.form {
+  width:100%;
+
+  &__label--hidden {
+    display: none;
+  }
+
+  &__input {
+    width: 83%;
+    margin-left:5%;
+    margin-right:auto;
+
+    padding:7% 3% 3% 3%;
+
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 6px solid $Turquoise;
+
+  }
+
+  & .headline--secondary {
+    font-family: $Montserrat;
+    font-weight: 300;
+    align-items: flex-start;
+    margin-left:2%;
+    width:90%;
+
+  }
+
+}

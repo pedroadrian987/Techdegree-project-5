@@ -1,0 +1,64 @@
+//-------------------------------------------
+//  BUTTONS
+//-------------------------------------------
+
+.btn-- {
+
+  &default {
+    margin-top: 5%;
+    @include button($Malibu);
+    @include medQ-center(1%, 1%, 2%, 1%, $brkpoint-md){
+      .form & {
+        width: 100%;
+      }
+    }
+    @include medQ-lineCenter(1%, 2%, 2%, 2%, $brkpoint-lg){
+      width: 15%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      .form & {
+        width: 100%;
+      }
+    }
+  }
+
+  &success {
+    @include button($PastelGreen);
+    @include medQ-center(1%, 1%, 2%, 1%, $brkpoint-md);
+    @include medQ-lineCenter(1%, 2%, 2%, 2%, $brkpoint-lg){
+      width: 15%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
+  }
+
+  &error {
+    @include button($Sunglo);
+    @include medQ-center(1%, 1%, 2%, 1%, $brkpoint-md);
+    @include medQ-lineCenter(1%, 2%, 2%, 2%, $brkpoint-lg){
+      width: 15%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
+  }
+
+  &warning {
+    @include button($BurntSienna);
+    @include medQ-center(1%, 1%, 2%, 1%, $brkpoint-md);
+    @include medQ-lineCenter(1%, 2%, 2%, 2%, $brkpoint-lg){
+      width: 15%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
+  }
+
+  &info {
+    @include button($Deluge);
+    @include medQ-center(1%, 1%, 2%, 1%, $brkpoint-md);
+    @include medQ-lineCenter(1%, 2%, 2%, 2%, $brkpoint-lg){
+      width: 15%;
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
+  }
+}

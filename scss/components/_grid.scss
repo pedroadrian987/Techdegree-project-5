@@ -1,0 +1,420 @@
+//-------------------------------------------
+//  GRID
+//-------------------------------------------
+
+.grid__col--{
+
+  &3 {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    margin-left:25%;
+    margin-right:25%;
+    @include medQ-center(2%, 8%, 0, 0, $brkpoint-sm);
+    @include medQ-center(10%, 8%, 0, 8%, $brkpoint-md);
+    @include medQ-line(2%, 0, 0, 8%, $brkpoint-lg){
+      width: 20%;
+      float: left;
+    }
+  }
+
+  &9 {
+    margin-left: 10%;
+    @include medQ-center(4%, 5%, 0, 0, $brkpoint-sm){
+      width:100%;
+    }
+    @include medQ-lineEnd(2%, 10%, 4%, 0, $brkpoint-lg){
+      width:40%;
+      float: right;
+    }
+
+    & > [role] {
+      @include medQ-center(0, 0, 0, 0, $brkpoint-sm){
+        width: 100%;
+      }
+      @include medQ-lineEnd(0, 0, 0, 0, $brkpoint-lg){
+        width: 50%;
+      }
+    }
+
+  }
+
+
+  &12 {
+    width:90%;
+
+    .card {
+      margin: 30% 2% 20% 2%;
+      @include medQ-center(10%, 0, 15%, 3%, $brkpoint-sm){
+        width: 90%;
+      }
+      @include medQ-center(10%, 0, 5%, 7%, $brkpoint-md){
+        width: 90%;
+      }
+      @include medQ-lineCenter(0, 0, 5%, 2%, $brkpoint-lg){
+        width: 90%;
+        clear: both;
+        padding-top: 5%;
+      }
+    }
+  }
+
+
+  &8 {
+    padding-left:3%;
+    padding-right:3%;
+    @include medQ-center(0, 0, 5%, 4%, $brkpoint-md);
+    @include medQ-line(0, 0, 0, 2%, $brkpoint-lg){
+      width: 55%;
+      float: left;
+      p{
+        display: inline;
+      }
+    }
+  }
+
+  &4 {
+    @include medQ-center(0, 8%, 7%, 0, $brkpoint-lg){
+      width: 25%;
+      float: right;
+    }
+  }
+
+  &6 {
+    &:first-child{
+      @include medQ-line(5%, 0, 0, 0, $brkpoint-lg){
+        width: 40%;
+        float: left;
+        margin-left: 5%;
+      }
+    }
+
+    &:nth-child(2){
+      margin-left: 25%;
+      margin-top: 4%;
+      width:55%;
+      @include medQ-center(4%, 0, 0, 5%, $brkpoint-sm);
+      @include medQ-line(5%, 0, 0, 0, $brkpoint-lg){
+      width: 40%;
+      float: right;
+      margin-top: 1%;
+      }
+    }
+  }
+
+
+  &12 {
+    width:100%;
+    margin-top:2%;
+    @include medQ-line(2%, 0, 4%, 0, $brkpoint-md){
+      width: 100%;
+    }
+    @include medQ-line(2%, 0, 0, 2%, $brkpoint-lg);
+  }
+}
+
+
+//Grid--------------------------------
+
+.grid__row {
+  width: 90%;
+
+  @include medQ-center(0, 5%, 5%, 5%, $brkpoint-sm);
+
+  &:first-child {
+    @include medQ-center(18%, 5%, 17%, 5%, $brkpoint-sm) {
+      width:90%;
+    }
+  }
+
+  &:nth-child(9){
+    @include medQ-center(0, 0, 3%, 7%, $brkpoint-sm);
+
+
+    & .grid__col--12 {
+      @include gridCol($Riptide, 55%, 3%, 35%);
+      margin-left: 3%;
+      @include medQ-line(0, 5%, 0, 0, $brkpoint-sm);
+      @include medQ-center(0, 5%, 2%, 0, $brkpoint-md){
+        width: 20%;
+        padding-right: 40%;
+        padding-left: 40%;
+      }
+      @include medQ-center(3%, 0, 0, 4%, $brkpoint-lg){
+        padding: 1%;
+        width: 90%;
+      }
+    }
+  }
+
+  &:nth-child(10){
+    width: 85%;
+    margin-left: 3%;
+    margin-top: 7%;
+
+    @include medQ-center(5%, 0, 7%, 5.5%, $brkpoint-sm);
+    @include medQ-line(0, 0, 0, 0, $brkpoint-md){
+      width: 90%;
+      padding-left:0;
+      padding-right:0;
+    }
+    @include medQ-line(0, 0, 0, 2.7%, $brkpoint-lg){
+      width: 95%;
+    }
+
+    & .grid__col--6 {
+      @include gridCol($BlueChill, 62%, 0%, 32%);
+      margin-top:0;
+      padding-left: 4%;
+      margin-left: 0;
+      @include medQ-lineCenter(3%, 0, 0, 4%, $brkpoint-sm){
+        width: 29%;
+        padding-left:0;
+        padding-right: 70%;
+      }
+      @include medQ-center(3%, 0, 0, 0, $brkpoint-md){
+        width: 85%;
+        padding-left: 15%;
+        padding-right: 15%;
+
+        &:first-child {
+          margin-right: 2%;
+        }
+
+        &:nth-child(2) {
+          margin-left: 2%;
+        }
+      }
+      @include medQ-lineCenter(3%, 1%, 0, 1%, $brkpoint-lg){
+        padding: 1%;
+        width: 40.5%;
+      }
+    }
+  }
+
+  &:nth-child(11){
+    margin-top: 8%;
+    margin-left: 3%;
+    width: 90%;
+    @include medQ-center(0, 0, 7%, 5.5%, $brkpoint-sm);
+    @include medQ-lineCenter(3%, 0, 0, 0, $brkpoint-md){
+      width: 91%;
+    }
+    @include medQ-lineCenter(3%, 0, 0, 3.5%, $brkpoint-lg){
+      width: 83%;
+    }
+
+    & .grid__col--4{
+      @include gridCol($Anakiwa, 44%, 5%, 43%);
+      @include medQ-line(3%, 1%, 0, 0, $brkpoint-sm){
+        padding-right:46%;
+      }
+      @include medQ-center(3%, 1%, 0, 0, $brkpoint-md){
+        width: 15%;
+        padding-right:10%;
+        padding-bottom: 2%;
+
+        &:first-child{
+          margin-right:7%;
+        }
+
+        &:nth-child(3){
+          margin-left:6%;
+        }
+      }
+      @include medQ-lineCenter(0, 0, 0, 0, $brkpoint-lg){
+        width:12%;
+        padding-right:10%;
+        padding-left: 10%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+        &:first-child{
+          margin-right:2%;
+        }
+
+        &:nth-child(3){
+          margin-left:2%;
+        }
+      }
+
+    }
+  }
+
+  &:nth-child(12){
+    margin-right:0;
+    margin-left:3%;
+    margin-top: 8%;
+    @include medQ-center(0, 0, 7%, 5.5%, $brkpoint-sm);
+    @include medQ-lineCenter(2%, 0, 0, 0, $brkpoint-md){
+      width:90%;
+    }
+    @include medQ-lineCenter(3%,0, 0, 3.5%, $brkpoint-lg){
+      width:83%;
+    }
+
+
+    & .grid__col--3 {
+      @include gridCol($LondonHue, 49%, 3%, 40%);
+      margin-left: 0;
+      margin-right: 0;
+      margin-top:0;
+      @include medQ-line(3%, 0, 0, 0, $brkpoint-sm){
+        width:42%;
+      }
+      @include medQ-lineCenter(3%, 0, 0, 0, $brkpoint-md){
+        width: 100%;
+        padding-top:2%;
+        padding-bottom: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
+
+        &:nth-child(2){
+          margin-left: 1%;
+          margin-right: 0.5%;
+        }
+
+        &:nth-child(3){
+          margin-left:0.5%;
+          margin-right: 1%;
+        }
+      }
+      @include medQ-lineCenter(0, 0, 0, 0, $brkpoint-lg){
+        width:80%;
+        padding-right:0;
+        padding-left:0;
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+        &:nth-child(2){
+          margin-left:1%;
+          margin-right:0.5%;
+        }
+
+        &:nth-child(3){
+          margin-left:0.5%;
+          margin-right:1%;
+        }
+      }
+    }
+  }
+
+  &:nth-child(13){
+    width:90%;
+    margin-left: 3%;
+    margin-right: 0;
+    margin-top: 8%;
+    @include medQ-center(3%, 0, 7%, 5.5%, $brkpoint-sm);
+    @include medQ-line(5%, 0, 0, 0, $brkpoint-md);
+    @include medQ-line(3%, 0, 0, 0, $brkpoint-lg);
+
+    & .grid__col--5{
+      @include gridCol($DeYork, 17%, 3%, 72%);
+      @include medQ-center(3%, 0, 0, 0, $brkpoint-sm){
+        width: 20%;
+        padding-right:71%;
+      }
+      @include medQ-line(0, 1%, 0, 0, $brkpoint-md){
+        padding-right:2%;
+      }
+      @include medQ-line(0, 1%, 0, 4%, $brkpoint-lg){
+        padding-right:0;
+        padding-left:15%;
+        padding-top:1%;
+        padding-bottom:1%;
+      }
+    }
+
+    & .grid__col--7{
+      @include gridCol($CornflowerLilac, 17%, 3%, 72%);
+      @include medQ-center(3%, 0, 0, 0, $brkpoint-sm){
+        width: 20%;
+        padding-right:71%;
+      }
+      @include medQ-line(0, 4%, 0, 0, $brkpoint-lg){
+        padding-right:5%;
+        padding-left: 22%;
+        padding-top:1%;
+        padding-bottom:1%;
+      }
+    }
+  }
+
+  &:nth-child(14){
+    margin-top:7%;
+    @include medQ-center(0, 0, 7%, 5.5%, $brkpoint-sm);
+    @include medQ-lineCenter(4%, 0, 0, 0, $brkpoint-md){
+      width: 90%;
+    }
+    @include medQ-lineCenter(3%, 0, 0, 0.9%, $brkpoint-lg){
+      width: 87%;
+    }
+
+    & .grid__col--8 {
+      @include gridCol($Jaffa, 59%, 3%, 30%);
+      margin-left: 3%;
+      @include medQ-center(0, 0, 0, 0, $brkpoint-sm){
+        width: 27%;
+        padding-right: 67%;
+        padding-left: 0;
+      }
+      @include medQ-lineCenter(0, 0, 0, 0, $brkpoint-md){
+        width: 90%;
+        padding-right: 0;
+      }
+      @include medQ-lineCenter(0, 0, 0, 1%, $brkpoint-lg){
+        width: 59%;
+        padding-right:0;
+        padding-left: 0;
+        padding-top:1%;
+        padding-bottom: 1%;
+      }
+    }
+
+    & .grid__col--4 {
+      @include gridCol($Spray,59%, 3%, 30%);
+      margin-left: 3%;
+      @include medQ-center(3%, 0, 0, 0, $brkpoint-sm){
+        width: 27%;
+        padding-right: 67%;
+        padding-left: 0;
+      }
+      @include medQ-center(0, 0, 0, 1%, $brkpoint-md){
+        width: 50%;
+        padding-right: 0;
+      }
+      @include medQ-lineCenter(0, 0, 0, 1%, $brkpoint-lg){
+        width: 28%;
+        padding-right:4%;
+        padding-top:1%;
+        padding-bottom: 1%;
+      }
+    }
+  }
+
+  &:nth-child(15){
+    width: 90%;
+    margin-left:2%;
+    margin-top: 7%;
+    @include medQ-center(0, 0, 7%, 5.5%, $brkpoint-sm);
+    @include  medQ-lineCenter(6%, 0, 6%, 0, $brkpoint-md);
+    @include medQ-lineCenter(3%, 0, 0, 0.5%, $brkpoint-lg){
+      width: 89%;
+    }
+
+    & .grid__col--7 {
+      @include gridCol($SeaPink,20%,3%, 70%);
+      @include medQ-line(0, 0, 0, 0, $brkpoint-sm){
+        width:71%;
+      }
+      @include medQ-lineCenter(0, 0, 0, 0, $brkpoint-md){
+        padding-left: 25%;
+      }
+      @include medQ-lineCenter(0, 0, 6%, 0, $brkpoint-lg){
+        padding-top:1%;
+        padding-bottom: 1%;
+        padding-left: 10.5%;
+        padding-right: 13%;
+      }
+    }
+  }
+}

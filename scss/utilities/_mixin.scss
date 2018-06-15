@@ -1,0 +1,145 @@
+
+
+@mixin button($color){
+  background-color: $color;
+  text-transform: uppercase;
+  @extend %btn;
+}
+
+@mixin gridCol($color, $pad-R,$pad-L, $width){
+  background-color:$color;
+  padding-right:$pad-R;
+  padding-left:$pad-L;
+  width:$width;
+  @extend %Grid__col;
+}
+
+@mixin flex-center(){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-line(){
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin flex-lineEnd(){
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@mixin flex-lineCenter(){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin medQ-center($top, $right, $bottom, $left, $media: $brkpoint-sm){
+  @if $media == $brkpoint-sm {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md - 1){
+      margin: $top $right $bottom $left;
+      @include flex-center();
+      @content;
+    }
+  } @else if $media == $brkpoint-md{
+    @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg - 1){
+      margin: $top $right $bottom $left;
+      @include flex-center();
+      @content;
+
+    }
+   } @else if $media == $brkpoint-lg{
+     @media (min-width: $brkpoint-lg){
+       margin: $top $right $bottom  $left;
+       @include flex-center();
+       @content;
+
+     }
+   }
+
+}
+
+
+@mixin medQ-line($top, $right, $bottom, $left, $media: $brkpoint-sm){
+  @if $media == $brkpoint-sm {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md - 1){
+      margin: $top $right $bottom $left;
+      @include flex-line();
+      @content;
+    }
+  } @else if $media == $brkpoint-md{
+    @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg - 1){
+      margin: $top $right $bottom $left;
+      @include flex-line();
+      @content;
+
+    }
+   } @else if $media == $brkpoint-lg{
+     @media (min-width: $brkpoint-lg){
+       margin: $top $right $bottom  $left;
+       @include flex-line();
+       @content;
+
+     }
+   }
+
+}
+
+
+@mixin medQ-lineCenter($top, $right, $bottom, $left, $media: $brkpoint-sm){
+  @if $media == $brkpoint-sm {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md - 1){
+      margin: $top $right $bottom $left;
+      @include flex-lineCenter();
+      @content;
+    }
+  } @else if $media == $brkpoint-md{
+    @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg - 1){
+      margin: $top $right $bottom $left;
+      @include flex-lineCenter();
+      @content;
+
+    }
+   } @else if $media == $brkpoint-lg{
+     @media (min-width: $brkpoint-lg){
+       margin: $top $right $bottom  $left;
+       @include flex-lineCenter();
+       @content;
+
+     }
+   }
+
+}
+
+@mixin medQ-lineEnd($top, $right, $bottom, $left, $media: $brkpoint-sm){
+  @if $media == $brkpoint-sm {
+    @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md - 1){
+      margin: $top $right $bottom $left;
+      @include flex-lineEnd();
+      @content;
+    }
+  } @else if $media == $brkpoint-md{
+    @media (min-width: $brkpoint-md) and (max-width: $brkpoint-lg - 1){
+      margin: $top $right $bottom $left;
+      @include flex-lineEnd();
+      @content;
+
+    }
+   } @else if $media == $brkpoint-lg{
+     @media (min-width: $brkpoint-lg){
+       margin: $top $right $bottom  $left;
+       @include flex-lineEnd();
+       @content;
+
+     }
+   }
+
+}

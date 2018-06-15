@@ -1,0 +1,38 @@
+//-------------------------------------------
+//  IMAGES
+//-------------------------------------------
+
+.img--{
+
+  &frame {
+    border: 1px solid $SilverChalice;
+    padding: 4%;
+    @extend %imgWidth;
+    @include medQ-center(0, 0, 0, 10%, $brkpoint-md){
+      width: 70%;
+    }
+    @include medQ-center(0, 0, 0, 17%, $brkpoint-lg){
+      width: 80%;
+      padding: 1%;
+      float: left;
+    }
+  }
+
+  &avatar {
+    padding-top: 4%;
+    @extend %imgWidth;
+    @include medQ-lineCenter(3%, 0, 0, 0, $brkpoint-lg){
+      width: 40%;
+      float: right;
+    }
+
+    .form & {
+      padding-top:4%;
+      margin-left:22%;
+      width: 45%;
+      @include medQ-center(0, 30%, 0, 0, $brkpoint-lg);
+      width: 50%;
+    }
+
+  }
+}

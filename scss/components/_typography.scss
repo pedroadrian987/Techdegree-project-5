@@ -1,0 +1,70 @@
+//-------------------------------------------
+//  TYPOGRAPHY
+//-------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+//Fonts--------------
+
+$PtSans: 'PT Sans', sans-serif;
+$Montserrat: 'Montserrat', sans-serif;
+
+//-------------------
+* {
+  color: $SilverChalice;
+  font-family: $PtSans;
+  font-weight: 400;
+}
+
+.headline--primary {
+  color:$Turquoise;
+  margin-left: 7%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  font-family: $PtSans;
+  font-weight: 700;
+  font-size: 2.2em;
+  @extend %headlineWidth;
+  @include medQ-line(3%, 0, 5%, 7%, $brkpoint-sm);
+  @include medQ-line(2%, 0, 4%, 3%, $brkpoint-lg){
+    padding-top:0;
+    padding-bottom:0;
+  }
+}
+
+.headline--secondary {
+  font-family: $Montserrat;
+  font-weight: 300;
+  margin:0 0 7% 2%;
+  @extend %headlineWidth;
+  @include medQ-line(0, 0, 0, 2%, $brkpoint-lg){
+  }
+
+
+  &:nth-child(4) {
+    @extend %headlinePadL;
+    @include medQ-line(0, 0, 0, 0, $brkpoint-lg){
+      width: 20%;
+    }
+  }
+
+  &:nth-child(6) {
+    padding-top: 7%;
+    @extend %headlinePadL;
+    @include medQ-line(0, 0, 0, 0, $brkpoint-md){
+      width: 70%;
+    }
+    @include medQ-line(0, 0, 0, 0, $brkpoint-lg){
+      width: 20%;
+      clear:both;
+    }
+  }
+
+  &:nth-child(8) {
+    @extend %headlinePadL;
+    @include medQ-line(5%, 0, 0, 0, $brkpoint-lg){
+      width: 90%;
+    }
+  }
+}

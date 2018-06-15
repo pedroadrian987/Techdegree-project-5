@@ -1,0 +1,63 @@
+
+
+%flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+%btn {
+  border: none;
+  color: $White;
+  width:93%;
+  padding-top:3%;
+  padding-bottom:3%;
+  border-radius: .25em;
+  margin-bottom: 5%;
+  margin-left: 3%;
+  font-weight:700;
+}
+
+%Grid__col {
+  padding-top:2%;
+  padding-bottom:2.5%;
+  border-radius:.25em;
+  margin-bottom:2%;
+}
+
+%Grid__row {
+  margin-top:7%;
+  margin-bottom:7%;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+%headlinePadL {
+  padding-left: 4%;
+}
+
+%headlineWidth {
+  width:90%;
+}
+
+%imgWidth {
+  width:90%;
+}
+
+%navItem{
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+%link{
+  text-decoration: none;
+}

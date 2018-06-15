@@ -1,0 +1,40 @@
+//Unique elementes-----------
+.container{
+  width: 100%;
+  margin-left:5%;
+  margin-right:5%;
+  @media (width:$brkpoint-lg){
+    margin: 0 0 0 0;
+  }
+}
+
+p {
+  font-size: 1.2em;
+  font-family: $PtSans;
+  padding-bottom: 9%;
+  @include medQ-line(0, 0, 0, 3%, $brkpoint-lg){
+    padding-bottom:0;
+  }
+
+  & .link {
+    @extend %link;
+    color: $Cyan;
+    font-weight: 700;
+  }
+}
+
+
+.blockquote {
+  font-size:1.5em;
+  font-style: italic;
+  font-family: $PtSans;
+  border-left:6px solid $Turquoise;
+  border-radius: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 15%;
+  margin-left: 5%;
+  @include medQ-center(5%, 0, 5%, 5%, $brkpoint-lg){
+    width: 90%;
+  }
+}
