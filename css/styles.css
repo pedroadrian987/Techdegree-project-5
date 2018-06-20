@@ -45,8 +45,116 @@
   padding-top: 4%;
   padding-bottom: 4%; }
 
-.nav__item > [href], p .link {
+p .link, .nav__item > [href] {
   text-decoration: none; }
+
+/* -----------------------------------------------------------------------------
+----------------------------------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* -----------------------------------------------------------------------------
+----------------------------------------------------------------------------- */
+.container {
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%; }
+  @media (width: 1400px) {
+    .container {
+      margin: 0 0 0 0; } }
+
+p {
+  font-size: 1.2em;
+  font-family: "PT Sans", sans-serif;
+  padding-bottom: 9%; }
+  @media (min-width: 1400px) {
+    p {
+      margin: 0 0 0 3%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      padding-bottom: 0; } }
+  p .link {
+    color: #0fd4ff;
+    font-weight: 700; }
+
+.blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: "PT Sans", sans-serif;
+  border-left: 6px solid #2ae3b1;
+  border-radius: 1.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 15%;
+  margin-left: 5%; }
+  @media (min-width: 1400px) {
+    .blockquote {
+      margin: 5% 0 5% 5%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 90%; } }
 
 * {
   color: #a8a8a8;
@@ -1923,111 +2031,3 @@
           padding-bottom: 1%;
           padding-left: 10.5%;
           padding-right: 13%; } }
-
-/* -----------------------------------------------------------------------------
------------------------------------------------------------------------------ */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* -----------------------------------------------------------------------------
------------------------------------------------------------------------------ */
-.container {
-  width: 100%;
-  margin-left: 5%;
-  margin-right: 5%; }
-  @media (width: 1400px) {
-    .container {
-      margin: 0 0 0 0; } }
-
-p {
-  font-size: 1.2em;
-  font-family: "PT Sans", sans-serif;
-  padding-bottom: 9%; }
-  @media (min-width: 1400px) {
-    p {
-      margin: 0 0 0 3%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-      flex-direction: row;
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      align-items: flex-start;
-      padding-bottom: 0; } }
-  p .link {
-    color: #0fd4ff;
-    font-weight: 700; }
-
-.blockquote {
-  font-size: 1.5em;
-  font-style: italic;
-  font-family: "PT Sans", sans-serif;
-  border-left: 6px solid #2ae3b1;
-  border-radius: 1.5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin-bottom: 15%;
-  margin-left: 5%; }
-  @media (min-width: 1400px) {
-    .blockquote {
-      margin: 5% 0 5% 5%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      width: 90%; } }
